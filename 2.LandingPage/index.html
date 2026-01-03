@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Portfolio</title>
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 22px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #4da3ff;
+}
+.hero {
+    background-color: #555;
+    color: white;
+    padding: 80px 40px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #4da3ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #1f7ae0;
+}
+.about {
+    padding: 60px 40px;
+    background-color: #f5f5f5;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.resume-btn {
+    display: block;
+    width: fit-content;
+    margin: 25px auto;
+    padding: 10px 20px;
+    background-color: #4da3ff;
+    color: white;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    background-color: #1f7ae0;
+}
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+h2:hover{
+color: #4da3ff;
+
+}
+p:hover{
+    color: #4da3ff;
+}
+h1:hover{
+    color: #1f7ae0;
+}
+header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero button,
+.resume-btn {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero button:hover,
+.resume-btn:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 10px 5px 0;
+    }
+
+    .hero {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        margin: 0 auto 20px;
+    }
+
+    .about {
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 1024px) {
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        margin-left: 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Portfolio</h1>
+            <p>Just another My Blog site</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">SKILL</a></li>
+        <li><a href="#">TESTIMONIAL</a></li>
+        <li><a href="#">EXPERIENCE</a></li>
+        <li><a href="#">WORKS</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2 >Srinidhi</h2>
+        <p>
+           Hi, I am a second-year B.E. Computer Science and Engineering student with a strong enthusiasm for today’s rapidly evolving technologies. I am passionate about learning and exploring new tools, programming languages, and modern development practices.
+        </p>
+        <button>Hire Me</button>
+    </section>
+
+    <section class="about">
+        <h2>ABOUT ME</h2>
+        <p>
+            I am a developer who blends expertise with industry knowledge to build user-friendly and visually appealing websites.
+        </p>
+        <p>
+            I work with HTML, CSS, and JavaScript to design, develop, and maintain responsive web applications.
+        </p>
+
+        <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Srinidhi | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
